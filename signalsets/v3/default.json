@@ -1,4 +1,7 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" }
+  ],
+  "commands": [
 { "hdr": "7DA", "dbg": true, "cmd": {"22": "A020"}, "freq": 15,
   "signals": [
     {"id": "JOURNEY_TP_FL_7DA", "path": "Tires", "fmt": { "len": 8, "max": 92, "mul": 1541, "div": 4250, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
@@ -230,7 +233,7 @@
   "signals": [
     {"id": "JOURNEY_ODO_03BC", "path": "Trips", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "043B"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "043B"}, "freq": 30, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_ODO", "path": "Trips", "fmt": { "len": 16, "max": 536862.72, "mul": 8.192, "unit": "miles" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
