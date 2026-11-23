@@ -43,6 +43,9 @@ supported_commands_by_ecu:
   - 014C:TAC_PCT
   - 7E0.7E8.22043B:JOURNEY_ODO
 unsupported_commands_by_ecu:
+  "6A2":
+  - 6A2.682.22D8EF
+  - 6A2.682.22D8FB
   "6B4":
   - 6B4.694.22D410
   "740":
