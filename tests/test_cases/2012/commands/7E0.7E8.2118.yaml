@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2118
+test_cases:
+- expected_values:
+    JOURNEY_ATF_T_V_2: 125.375
+  response: 7E80561181F5884

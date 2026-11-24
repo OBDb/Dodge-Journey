@@ -1,0 +1,10 @@
+command_id: 7E0.7E8.2117
+test_cases:
+- expected_values:
+    JOURNEY_LINE_P: 126
+    JOURNEY_LINE_P_DUTY: 5.08092
+  response: 7E80761170D007E7587
+- expected_values:
+    JOURNEY_LINE_P: 118
+    JOURNEY_LINE_P_DUTY: 14.07786
+  response: 7E80761172405766E87

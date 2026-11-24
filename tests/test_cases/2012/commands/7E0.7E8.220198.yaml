@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220198
+test_cases:
+- expected_values:
+    JOURNEY_ENG_TEMEPRATURE: -271.34
+  response: '7E8056201980012'

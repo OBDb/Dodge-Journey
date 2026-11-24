@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220174
+test_cases:
+- expected_values:
+    JOURNEY_MAP: 42.2
+  response: 7E80562017400D3
+- expected_values:
+    JOURNEY_MAP: 44.8
+  response: 7E80562017400E0

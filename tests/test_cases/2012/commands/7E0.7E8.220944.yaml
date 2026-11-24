@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220944
+test_cases:
+- expected_values:
+    JOURNEY_BRAKE_BOOSTER_P: 57
+  response: '7E8056209441644'
+- expected_values:
+    JOURNEY_BRAKE_BOOSTER_P: 61.95
+  response: '7E8056209441833'

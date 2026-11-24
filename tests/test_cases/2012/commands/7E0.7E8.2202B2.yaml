@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2202B2
+test_cases:
+- expected_values:
+    JOURNEY_REQUIRED_FUEL_CHG_1: 10.57812
+  response: 7E8056202B202A5
+- expected_values:
+    JOURNEY_REQUIRED_FUEL_CHG_1: 10.6875
+  response: 7E8056202B202AC

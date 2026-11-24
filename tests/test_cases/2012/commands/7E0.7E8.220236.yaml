@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220236
+test_cases:
+- expected_values:
+    JOURNEY_INJ_WIDTH_CYL_3: 2.048
+  response: '7E80762023600000800'
+- expected_values:
+    JOURNEY_INJ_WIDTH_CYL_3: 2.088
+  response: '7E80762023600000828'
