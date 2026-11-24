@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220258
+test_cases:
+- expected_values:
+    JOURNEY_FUEL_MASS_CYL_4: 10.0625
+  response: '7E8056202580284'
+- expected_values:
+    JOURNEY_FUEL_MASS_CYL_4: 11.07812
+  response: 7E80562025802C5

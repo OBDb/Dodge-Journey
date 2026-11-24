@@ -18,12 +18,12 @@
   "signals": [
     {"id": "JOURNEY_TP_RR_7DA", "path": "Tires", "fmt": { "len": 8, "max": 92, "mul": 1541, "div": 4250, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "17"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "17"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_LINE_P_DUTY", "path": "Engine", "fmt": {           "len": 16, "max": 100, "div": 655, "unit": "percent" }, "name": "Line pressure duty cycle"},
     {"id": "JOURNEY_LINE_P",      "path": "Engine", "fmt": {"bix": 16, "len": 8,  "max": 255,             "unit": "psi"     }, "name": "Line pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "18"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "18"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_ATF_T_V_2", "path": "Transmission", "fmt": { "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 2", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
@@ -32,11 +32,11 @@
     {"id": "JOURNEY_AAT_7E0", "path": "Engine",  "fmt": {           "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Ambient air temperature"},
     {"id": "JOURNEY_BAT_T",   "path": "Battery", "fmt": {"bix": 48, "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Battery temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "2D"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "2D"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_EOT_212D", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 376, "min": -83, "mul": 9, "div": 5, "add": -83, "unit": "fahrenheit" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "3A"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "3A"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_TRANS_SUMP_T_VAR_1",    "path": "Transmission", "fmt": {"bix": 80, "len": 8,  "max": 1020, "mul": 4,                        "unit": "fahrenheit" }, "name": "Transmission sump temperature, variant 1"},
     {"id": "JOURNEY_TRANS_TQ_CONV_T_VAR_1", "path": "Transmission", "fmt": {"bix": 96, "len": 16, "max": 1875, "mul": 9, "div": 320, "add": 32, "unit": "fahrenheit" }, "name": "Transmission torque converter temperature, variant 1"}
@@ -49,18 +49,18 @@
   "signals": [
     {"id": "JOURNEY_FLI", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 255, "div": 256, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B2"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "B2"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_BOOST_P_ESTIMATE", "path": "Engine",  "fmt": {"bix": 32,  "len": 16, "max": 148,              "div": 441,             "unit": "psi"        }, "name": "Boost pressure estimate"},
     {"id": "JOURNEY_CRANKCASE_P",      "path": "Engine",  "fmt": {"bix": 96,  "len": 16, "max": 37.21,            "div": 1761,            "unit": "psi"        }, "name": "Crankcase pressure"},
     {"id": "JOURNEY_CHG_T",            "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 953,   "mul": 10, "div": 711,  "add": 32, "unit": "fahrenheit" }, "name": "Charge temperature"},
     {"id": "JOURNEY_CHG_P",            "path": "Battery", "fmt": {"bix": 160, "len": 16, "max": 296,              "div": 221,             "unit": "psi"        }, "name": "Charge pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B3"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "B3"}, "freq": 0.25, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_RADIATOR_FAN_SPD", "path": "Movement", "fmt": {"bix": 80, "len": 8, "max": 132600, "mul": 520, "unit": "rpm" }, "name": "Radiator fan speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B4"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "B4"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_P_SENS_1000_S", "path": "Fuel",    "fmt": {           "len": 16, "max": 118,            "div": 552,            "unit": "psi"        }, "name": "Fuel pressure sensor, 1000's psi"},
     {"id": "JOURNEY_CHG_AIR_COOLER_T",   "path": "Battery", "fmt": {"bix": 96, "len": 16, "max": 1875, "mul": 9, "div": 320, "add": 32, "unit": "fahrenheit" }, "name": "Charge air cooler outlet temperature"}
@@ -101,15 +101,15 @@
     {"id": "JOURNEY_VGT_COMP_OULET_AIR_T", "path": "Engine",   "fmt": {"bix": 112, "len": 16, "max": 29522,  "mul": 9,            "div": 20, "add": 32, "unit": "fahrenheit"       }, "name": "Variable geometry turbo compressor outlet air temperature"},
     {"id": "JOURNEY_VGT_COMP_INLET_AIR_T", "path": "Engine",   "fmt": {"bix": 144, "len": 16, "max": 29522,  "mul": 9,            "div": 20, "add": 32, "unit": "fahrenheit"       }, "name": "Variable geometry turbo compressor inlet air temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0109"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0109"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_BAROMETRIC_P", "path": "Engine", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilopascal" }, "name": "Barometric pressure", "suggestedMetric": "barometricPressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0127"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0127"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_AAT", "path": "Engine", "fmt": { "len": 8, "max": 376, "min": -83, "mul": 9, "div": 5, "add": -83, "unit": "fahrenheit" }, "name": "Ambient temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "012B"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "012B"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_CAT_MODEL_T", "path": "Engine", "fmt": { "len": 16, "max": 1000, "unit": "celsius" }, "name": "Catalyst modeled temperature"}
   ]},
@@ -117,7 +117,7 @@
   "signals": [
     {"id": "JOURNEY_FUEL_TEMEPRATURE", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.14, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0166"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0166"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_MASS_CORR_CYL_1", "path": "Fuel", "fmt": {"bix": 144, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 1"},
     {"id": "JOURNEY_FUEL_MASS_CORR_CYL_2", "path": "Fuel", "fmt": {"bix": 160, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 2"},
@@ -126,7 +126,7 @@
     {"id": "JOURNEY_FUEL_MASS_CORR_CYL_5", "path": "Fuel", "fmt": {"bix": 208, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 5"},
     {"id": "JOURNEY_FUEL_MASS_CORR_CYL_6", "path": "Fuel", "fmt": {"bix": 224, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0168"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0168"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_EOT",              "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 3003.56, "min": -3549.94, "div": 10,  "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Engine oil temperature",          "suggestedMetric": "engineOilTemperature"},
     {"id": "JOURNEY_TURBINE_UP_T",     "path": "Engine", "fmt": {"bix": 224, "len": 16, "max": 6280.36, "min": -273.14,  "div": 10,  "add": -273.14,               "unit": "celsius" }, "name": "Turbine upstream temperature"},
@@ -135,25 +135,25 @@
     {"id": "JOURNEY_CRANKCASE_DIFF_P", "path": "Engine", "fmt": {"bix": 328, "len": 16, "max": 655.35,                   "div": 100,                               "unit": "unknown" }, "name": "Crankcase differential pressure"},
     {"id": "JOURNEY_T_BEFORE_TURBINE", "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 6280.36, "min": -273.14,  "div": 10,  "add": -273.14,               "unit": "celsius" }, "name": "Temperature before turbine"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0174"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0174"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_MAP", "path": "Engine", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "kilopascal" }, "name": "Intake manifold air pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "017E"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "017E"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_EXH_T_EGR_COOLER_DN", "path": "Engine", "fmt": {           "len": 16, "max": 3003.56, "min": -3549.94, "div": 10, "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Exhaust temperature, EGR cooler downstream"},
     {"id": "JOURNEY_EXH_T_DN_EXH",        "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 3003.56, "min": -3549.94, "div": 10, "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Exhaust temperature, downstream of exhaust manifold"},
     {"id": "JOURNEY_EXH_T_UP_EXH",        "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 3003.56, "min": -3549.94, "div": 10, "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Exhaust temperature, upstream of exhaust manifold"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0198"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0198"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_ENG_TEMEPRATURE", "path": "Engine", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.14, "unit": "celsius" }, "name": "Engine temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "01A9"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "01A9"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_KNOCK_SENS_1", "path": "Engine", "fmt": { "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "Knock sensor 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "01AA"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "01AA"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_KNOCK_SENS_2", "path": "Engine", "fmt": { "len": 16, "max": 5, "div": 13107, "unit": "volts" }, "name": "Knock sensor 2"}
   ]},
@@ -161,47 +161,47 @@
   "signals": [
     {"id": "JOURNEY_SHORT_TERM_KNOCK", "path": "Engine", "fmt": { "len": 16, "max": 32767.5, "div": 2, "unit": "degrees" }, "name": "Short term knock retard"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "01FF"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "01FF"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_IAT_01FF", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 191, "min": -64, "add": -64, "unit": "celsius" }, "name": "Intake manifold air temperature", "suggestedMetric": "intakeAirTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0227"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0227"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FLI_INPUT", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level input", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "022A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "022A"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_EOP", "path": "Engine", "fmt": { "len": 8, "max": 147.8999, "mul": 29, "div": 50, "unit": "psi" }, "name": "Engine oil pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0234"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0234"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_INJ_WIDTH_CYL_1", "path": "Engine", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0235"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0235"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_INJ_WIDTH_CYL_2", "path": "Engine", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0236"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0236"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_INJ_WIDTH_CYL_3", "path": "Engine", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0237"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0237"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_INJ_WIDTH_CYL_4", "path": "Engine", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0255"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0255"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_MASS_CYL_1", "path": "Fuel", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Fuel mass, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0256"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0256"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_MASS_CYL_2", "path": "Fuel", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Fuel mass, cylinder 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0257"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0257"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_MASS_CYL_3", "path": "Fuel", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Fuel mass, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0258"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0258"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_MASS_CYL_4", "path": "Fuel", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Fuel mass, cylinder 4"}
   ]},
@@ -209,23 +209,23 @@
   "signals": [
     {"id": "JOURNEY_FUEL_RAIL_P", "path": "Fuel", "fmt": {"bix": 24, "len": 8, "max": 36.9749, "mul": 29, "div": 200, "unit": "psi" }, "name": "Fuel rail pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "02B2"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "02B2"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_REQUIRED_FUEL_CHG_1", "path": "Battery", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Required fuel charge, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "02B3"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "02B3"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_REQUIRED_FUEL_CHG_2", "path": "Battery", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Required fuel charge, cylinder 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "02B4"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "02B4"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_REQUIRED_FUEL_CHG_3", "path": "Battery", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Required fuel charge, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "02B5"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "02B5"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_REQUIRED_FUEL_CHG_4", "path": "Battery", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "unknown" }, "name": "Required fuel charge, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0329"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0329"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_AC_HIGH_SIDE_P", "path": "Engine", "fmt": { "len": 8, "max": 3570, "mul": 14, "unit": "kilopascal" }, "name": "Air conditioning high side pressure"}
   ]},
@@ -241,27 +241,27 @@
   "signals": [
     {"id": "JOURNEY_EXH_CAM_1_OFFSET", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft 1 to crankshaft offset"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "069E"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "069E"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_VARIABLE_VLV_TIM_OIL_P", "path": "Engine", "fmt": { "len": 8, "max": 1020, "mul": 4, "unit": "kilopascal" }, "name": "Variable valve timing oil pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "069F"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "069F"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_VARIABLE_VLV_TIM_OIL_T", "path": "Engine", "fmt": { "len": 8, "max": 191, "min": -64, "add": -64, "unit": "celsius" }, "name": "Variable valve timing oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "06C2"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "06C2"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_INT_CAM_1_OFFSET", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Intake camshaft 1 to crankshaft offset"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "06F3"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "06F3"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_FUEL_RAIL_P_06F3", "path": "Fuel", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "unknown" }, "name": "Fuel rail pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0944"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0944"}, "freq": 0.25, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_BRAKE_BOOSTER_P", "path": "Control", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "kilopascal" }, "name": "Brake booster pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0ECA"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0ECA"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_MDS_ACTIVE", "path": "Engine", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Multi-displacement system active"}
   ]},
@@ -417,15 +417,15 @@
   "signals": [
     {"id": "JOURNEY_CHARGED_AIR_COOLER_T", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 18906, "mul": 36, "div": 125, "add": 32, "unit": "fahrenheit" }, "name": "Charged air cooler outlet temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B010"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "B010"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_ATF_T_VAR_3", "path": "Transmission", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 3", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B028"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "B028"}, "freq": 0.25, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_TQ_CONV_SLIP", "path": "Transmission", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Torque converter slip"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B09B"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "B09B"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JOURNEY_TQ_CONV_LOCK", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Torque converter lock status"}
   ]},

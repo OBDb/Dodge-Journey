@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22B010
+test_cases:
+- expected_values:
+    JOURNEY_ATF_T_VAR_3: 125.375
+  response: 7E80562B0101F58
+- expected_values:
+    JOURNEY_ATF_T_VAR_3: 125.5625
+  response: 7E80562B0101F64

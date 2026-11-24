@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22B028
+test_cases:
+- expected_values:
+    JOURNEY_TQ_CONV_SLIP: 26
+  response: 7E80562B028001A
+- expected_values:
+    JOURNEY_TQ_CONV_SLIP: 526
+  response: 7E80562B028020E

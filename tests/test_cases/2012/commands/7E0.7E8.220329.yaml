@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220329
+test_cases:
+- expected_values:
+    JOURNEY_AC_HIGH_SIDE_P: 1232
+  response: '7E80462032958'
+- expected_values:
+    JOURNEY_AC_HIGH_SIDE_P: 1330
+  response: 7E8046203295F

@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2206C2
+test_cases:
+- expected_values:
+    JOURNEY_INT_CAM_1_OFFSET: -5.2
+  response: 7E8056206C2FFCC
+- expected_values:
+    JOURNEY_INT_CAM_1_OFFSET: -5.1
+  response: 7E8056206C2FFCD

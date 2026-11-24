@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22012B
+test_cases:
+- expected_values:
+    JOURNEY_CAT_MODEL_T: 577
+  response: 7E80562012B0241
+- expected_values:
+    JOURNEY_CAT_MODEL_T: 585
+  response: 7E80562012B0249
